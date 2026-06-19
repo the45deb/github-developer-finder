@@ -1,16 +1,100 @@
-# React + Vite
+# GitHub Developer Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React application that allows users to search GitHub developers and explore their public profile information and recently updated repositories using the GitHub REST API.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://the45deb.github.io/github-developer-finder/
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Search GitHub users by username
+* Display developer profile information
+* Show public repositories sorted by recent updates
+* Display repository language and star count
+* Handle loading states and user-not-found errors
+* Responsive design using Bootstrap
+* Deployed with GitHub Pages and GitHub Actions
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* JavaScript
+* HTML5
+* CSS3
+* Bootstrap
+* GitHub REST API
+* GitHub Actions
+* GitHub Pages
+* Git / GitHub
+
+## What I Practiced
+
+This project helped me practice frontend development concepts such as reusable UI structure, API integration, asynchronous JavaScript, conditional rendering, error handling, responsive design, and deployment using GitHub Pages.
+
+## Project Structure
+
+```text
+github-developer-finder/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/the45deb/github-developer-finder.git
+```
+
+Enter the project folder:
+
+```bash
+cd github-developer-finder
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build the project:
+
+```bash
+npm run build
+```
+
+## API Used
+
+This project uses the public GitHub REST API:
+
+```text
+https://api.github.com/users/{username}
+https://api.github.com/users/{username}/repos
+```
+
+## Author
+
+Axel Abel Flores Peña
+Junior Full Stack Developer / Frontend Developer
+
+## Status
+
+Completed as a portfolio project. Future improvements may include search history, dark mode, repository filtering, and a more component-based architecture.
