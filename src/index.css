@@ -1,0 +1,10 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
